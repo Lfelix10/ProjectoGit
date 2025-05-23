@@ -1,6 +1,6 @@
 <?php 
 session_start();
-include('../includes/auth.php'); // Verifica se é admin
+require_once '../includes/auth.php'; // Verifica se é admin
 include('../includes/db.php');
 
 // Lista convidados
@@ -18,7 +18,7 @@ $convidados = $stmt->fetchAll();
 <body class="hold-transition sidebar-mini">
   <div class="wrapper">
     <!-- Navbar -->
-    <?php include('includes/navbar.php'); ?>
+    <?php include('../includes/header.php'); ?>
 
     <!-- Sidebar -->
     <?php include('includes/sidebar.php'); ?>
